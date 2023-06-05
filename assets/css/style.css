@@ -3351,4 +3351,64 @@ body.v-light .logo-footer img.logo-light {
   position: relative;
   margin-top: 15px;
 }
+.resume .resume-box-inner:nth-of-type(n + 3) {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box-inner:nth-of-type(n + 2) {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box {
+    margin-bottom: 0;
+  }
+}
+.resume .resume-box .item-resume-box {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .resume .resume-box .item-resume-box {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box .item-resume-box {
+    padding-bottom: 20px;
+  }
+}
+.resume .resume-box .item-resume-box:last-of-type {
+  padding-bottom: 0;
+}
+.resume .resume-box .item-resume-box:last-of-type:after {
+  display: none;
+}
+.resume .resume-box .item-resume-box:before, .resume .resume-box .item-resume-box:after {
+  content: "";
+  position: absolute;
+}
+.resume .resume-box .item-resume-box:before {
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+}
+.resume .resume-box .item-resume-box:after {
+  top: 20px;
+  left: 4px;
+  width: 1px;
+  height: calc(100% - 24px);
+  background-color: var(--border-color);
+}
+.resume .resume-box .item-resume-box h6 {
+  max-width: 460px;
+  font-family: var(--body-font);
+  font-size: inherit;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--font-color);
+}
 /*# sourceMappingURL=style.css.map */
